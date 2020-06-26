@@ -1,0 +1,9 @@
+def fib_gen(n):
+    '''Generates a sequence of n Fibonacci elements.'''
+    start = 2
+    lst = [0, 1]
+    for i in range(start, n - start + 2):
+        lst.append(lst[i - 1] + lst[i - 2])
+    return lst
+    
+lst = fib_gen(22)
